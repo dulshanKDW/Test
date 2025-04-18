@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="icon" type="image/png" href="/GameVault/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/GameVault/favicon.svg">
+    <link rel="shortcut icon" href="/GameVault/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/GameVault/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="GameVault">
+    <link rel="manifest" href="/GameVault/site.webmanifest">
+    <link rel="stylesheet" href="./css/pcparts.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/headerfooter.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>       
+        <section ><img src="./images/logo.png" id="logo" alt="Logo"></section>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit" class="search-button">Search</button>
+            </div>
+            <div class="navbar">
+                <ol>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbutton">Products</a>
+                        <div class="dropdown-content">
+                            <a href="./consoles.html">Consoles</a>
+                            <a href="./peripherals.html">Peripherals</a>
+                            <a href="./pcparts.html">PC Parts</a>
+                        </div>
+                    </li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+                </ol>
+            </div>    
+        </nav>
+    </header>
+    <main class="container">
+        <section class="category" id="processors">
+            <h2>Processors</h2>
+            <div class="grid-container">
+                <div class="item" id="processor-1">
+                    <img src="./images/parts/proccessor1.jpg" alt="Intel Core Ultra 9 desktop processor">
+                    <p>Intel Core Ultra 9</p>
+                    <button id="add-processor-1">Add to Favourites</button>
+                </div>
+                <div class="item" id="processor-2">
+                    <img src="./images/parts/proccessor2.jpg" alt="Intel Core i7 desktop processor">
+                    <p>Intel Core i7</p>
+                    <button id="add-processor-2">Add to Favourites</button>
+                </div>
+                <div class="item" id="processor-3">
+                    <img src="./images/parts/proccessor3.jpg" alt="Intel Core i5 desktop processor">
+                    <p>Intel Core i5</p>
+                    <button id="add-processor-3">Add to Favourites</button>
+                </div>
+                <div class="item" id="processor-4">
+                    <img src="./images/parts/proccessor4.jpeg" alt="AMD Ryzen 9 desktop processor">
+                    <p>AMD Ryzen 9</p>
+                    <button id="add-processor-4">Add to Favourites</button>
+                </div>
+                <div class="item" id="processor-5">
+                    <img src="./images/parts/proccessor5.jpg" alt="AMD Ryzen 5 desktop processor">
+                    <p>AMD Ryzen 5</p>
+                    <button id="add-processor-5">Add to Favourites</button>
+                </div>
+                <div class="item" id="processor-6">
+                    <img src="./images/parts/proccessor6.jpeg" alt="AMD Ryzen 7 desktop processor">
+                    <p>AMD Ryzen 7</p>
+                    <button id="add-processor-6">Add to Favourites</button>
+                </div>
+            </div>
+        </section>
+        <section class="category" id="graphic-cards">
+            <h2>Graphic Cards</h2>
+            <div class="grid-container">
+                <div class="item" id="graphic-card-1">
+                    <img src="./images/parts/rtx4090.jpg" alt="Graphic Card 1">
+                    <p>Graphic Card 1</p>
+                    <button id="add-graphic-card-1">Add to Favourites</button>
+                </div>
+                <div class="item" id="graphic-card-2">
+                    <img src="./images/parts/rtx4090.jpg" alt="Graphic Card 1">
+                    <p>Graphic Card 2</p>
+                    <button id="add-graphic-card-2">Add to Favourites</button>
+                </div>
+                <div class="item" id="graphic-card-3">
+                    <img src="./images/parts/rtx4090.jpg" alt="Graphic Card 1">
+                    <p>Graphic Card 3</p>
+                    <button id="add-graphic-card-3">Add to Favourites</button>
+                </div>
+                <div class="item" id="graphic-card-4">
+                    <img src="./images/parts/rtx4090.jpg" alt="Graphic Card 1">
+                    <p>Graphic Card 4</p>
+                    <button id="add-graphic-card-4">Add to Favourites</button>
+                </div>
+                <div class="item" id="graphic-card-5">
+                    <img src="./images/parts/rtx4090.jpg" alt="Graphic Card 1">
+                    <p>Graphic Card 5</p>
+                    <button id="add-graphic-card-5">Add to Favourites</button>
+                </div>
+                <div class="item" id="graphic-card-6">
+                    <img src="./images/parts/arcb580.jpg" alt="Intel Arc B580 Desktop Graphic Card">
+                    <p>Intel Arc  B580</p>
+                    <button id="add-graphic-card-6">Add to Favourites</button>
+                </div>
+            </div>
+        </section>
+        <section class="category" id="motherboards">
+            <h2>Motherboards</h2>
+            <div class="grid-container">
+                <div class="item" id="motherboard-1">
+                    <img src="./images/parts/motherboard1.jpg" alt="ASRock X670E AMD">
+                    <p>ASRock X670E(AMD)</p>
+                    <button id="add-motherboard-1">Add to Favourites</button>
+                </div>
+                <div class="item" id="motherboard-2">
+                    <img src="./images/parts/motherboard2.jpeg" alt="Gigabyte Aorus X870 AMD"> 
+                    <p>Gigabyte Aorus X870(AMD)</p>
+                    <button id="add-motherboard-2">Add to Favourites</button>
+                </div>
+                <div class="item" id="motherboard-3">
+                    <p>Motherboard 3</p>
+                    <button id="add-motherboard-3">Add to Favourites</button>
+                </div>
+                <div class="item" id="motherboard-4">
+                    <p>Motherboard 4</p>
+                    <button id="add-motherboard-4">Add to Favourites</button>
+                </div>
+                <div class="item" id="motherboard-5">
+                    <p>Motherboard 5</p>
+                    <button id="add-motherboard-5">Add to Favourites</button>
+                </div>
+                <div class="item" id="motherboard-6">
+                    <p>Motherboard 6</p>
+                    <button id="add-motherboard-6">Add to Favourites</button>
+                </div>
+            </div>
+        </section>
+        <section class="category" id="memory">
+            <h2>Memory (RAM)</h2>
+            <div class="grid-container">
+                <div class="item" id="ram-1">
+                    <img src="./images/parts/ram1.jpg" alt="RAM 1">
+                    <p>RAM 1</p>
+                    <button id="add-ram-1">Add to Favourites</button>
+                </div>
+                <div class="item" id="ram-2">
+                    <img src="./images/parts/ram2.webp" alt="RAM 2">
+                    <p>RAM 2</p>
+                    <button id="add-ram-2">Add to Favourites</button>
+                </div>
+                <div class="item" id="ram-3">
+                    <img src="./images/parts/ram3.jpg" alt="RAM 3">
+                    <p>RAM 3</p>
+                    <button id="add-ram-3">Add to Favourites</button>
+                </div>
+                <div class="item" id="ram-4">
+                    <img src="./images/parts/ram4.jpg" alt="RAM 4">
+                    <p>RAM 4</p>
+                    <button id="add-ram-4">Add to Favourites</button>
+                </div>
+            </div>
+        </section>
+        <section class="category" id="storage-devices">
+            <h2>Storage Devices</h2>
+            <div class="grid-container">
+                <div class="item" id="storage-1">
+                    <p>Storage 1</p>
+                    <button id="add-storage-1">Add to Favourites</button>
+                </div>
+                <div class="item" id="storage-2">
+                    <p>Storage 2</p>
+                    <button id="add-storage-2">Add to Favourites</button>
+                </div>
+                <div class="item" id="storage-3">
+                    <p>Storage 3</p>
+                    <button id="add-storage-3">Add to Favourites</button>
+                </div>
+                <div class="item" id="storage-4">
+                    <p>Storage 4</p>
+                    <button id="add-storage-4">Add to Favourites</button>
+                </div>
+                <div class="item" id="storage-5">
+                    <p>Storage 5</p>
+                    <button id="add-storage-5">Add to Favourites</button>
+                </div>
+                <div class="item" id="storage-6">
+                    <p>Storage 6</p>
+                    <button id="add-storage-6">Add to Favourites</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="menu-footer">
+            <ol>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+            </ol>
+        <section class="social-media">
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" width="30"></a>       
+            <a href="#"><img src="./images/twitter.png" alt="Twitter" width="30"></a>        <!--https://www.flaticon.com/search?word=social%20media-->
+            <a href="#"><img src="./images/instagram.png" alt="Instagram" width="30"></a>
+            <a href="#"><img src="./images/youtube.png" alt="YouTube" width="30"></a>
+        </section>
+        <section class="contact-info">
+            <p>Contact Us: <a href="mailto:info@gamevault.com">info@gamevault.com</a></p>   
+        </section>
+        <small>&copy;GameVault. All Right Reserved.</small>
+    </footer>
+    <script>     /*Hamburger Menu JavaScript Function*/
+        function toggleMenu() { 
+            const menu = document.querySelector('.menu');   
+            menu.classList.toggle('active');
+        }
+    </script>    
+</body>
+</html>

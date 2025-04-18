@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="icon" type="image/png" href="/GameVault/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/GameVault/favicon.svg">
+    <link rel="shortcut icon" href="/GameVault/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/GameVault/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="GameVault">
+    <link rel="manifest" href="/GameVault/site.webmanifest">
+    <link rel="stylesheet" href="./css/consoles.css">
+    <link rel="stylesheet" href="./css/headerfooter.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>       
+        <section ><img src="./images/logo.png" id="logo" alt="Logo"></section>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+            </div>
+            <div class="navbar">
+                <ol>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbutton">Products</a>
+                        <div class="dropdown-content">
+                            <a href="./consoles.html">Consoles</a>
+                            <a href="./peripherals.html">Peripherals</a>
+                        </div>
+                    </li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&faq.html">Queries and FAQ</a> </li> 
+                </ol>
+            </div>    
+        </nav>
+    </header>
+
+    <main class="product-grid">
+        <h1>Consoles</h1>
+        <div class="grid-container">
+            <div class="product-item">
+                <h2>PlayStation 5</h2>
+                <div class="image-container">
+                    <img src="./images/ps5.jpg" alt="PlayStation 5">
+                    <div class="price-overlay">$662.99</div>
+                </div>
+                <p>Sony PlayStation 5 1TB Gaming Console</p>
+            </div>
+
+            <div class="product-item">
+                <h2>Xbox Series X</h2>
+                <div class="image-container">
+                    <img src="./images/xboxx.webp" alt="Xbox Series X">
+                    <div class="price-overlay">$774.99</div>
+                </div>
+                <p>Microsoft Xbox Series X 1TB Gaming Console</p>
+            </div>
+
+            <div class="product-item">
+                <h2>Nintendo Switch OLED</h2>
+                <div class="image-container">
+                    <img src="./images/nintendoswitch.jpg" alt="Nintendo Switch Handheld Console">
+                    <div class="price-overlay">$369.99</div>
+                </div>
+                <p>Nintendo Switch OLED Model with Wider 7-inch Screen</p>
+            </div>
+
+            <div class="product-item">
+                <h2>Meta Quest 3</h2>
+                <div class="image-container">
+                    <img src="./images/metaquest3.jpg" alt="Meta Quest 3 VR Headset">
+                    <div class="price-overlay">$954.07</div>
+                </div>
+                <p>Meta Quest 3 Wireless 512GB with Controllers</p>
+            </div>
+
+            <div class="product-item">
+                <h2>VALVE Steam Deck OLED</h2>
+                <div class="image-container">
+                    <img src="./images/steamdeck.jpg" alt="Steam Deck Handheld Console">
+                    <div class="price-overlay">$1115.00</div>
+                </div>
+                <p>VALVE Steam Deck OLED 512GB SSD + 16GB RAM</p>
+            </div>
+
+            <div class="product-item">
+                <h2>Logitech G Cloud</h2>
+                <div class="image-container">
+                    <img src="./images/logitechgcloud.jpg" alt="Logitech G Cloud Handheld Console">
+                    <div class="price-overlay">$299.99</div>
+                </div>
+                <p>Logitech G Cloud Handheld Cloud Gaming Console(Cloud Gaming Service Subscription Required)</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section class="menu-footer">
+            <ol>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+            </ol>
+        </section>
+        <section class="social-media">
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" width="30"></a>
+            <a href="#"><img src="./images/twitter.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="./images/instagram.png" alt="Instagram" width="30"></a>
+            <a href="#"><img src="./images/youtube.png" alt="YouTube" width="30"></a>
+        </section>
+        <section class="contact-info">
+            <p>Contact Us: <a href="mailto:info@gamevault.com">info@gamevault.com</a></p>   
+        </section>
+        <small>&copy;GameVault. All Right Reserved.</small>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>    
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="icon" type="image/png" href="/GameVault/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/GameVault/favicon.svg">
+    <link rel="shortcut icon" href="/GameVault/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/GameVault/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="GameVault">
+    <link rel="manifest" href="/GameVault/site.webmanifest">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/headerfooter.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>       
+        <section ><img src="./images/logo.png" id="logo" alt="Logo"></section>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit" class="search-button">Search</button>
+            </div>
+            <div class="navbar">
+                <ol>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbutton">Products</a>
+                        <div class="dropdown-content">
+                            <a href="./consoles.html">Consoles</a>
+                            <a href="./peripherals.html">Peripherals</a>
+                            <a href="./pcparts.html">PC Parts</a>
+                        </div>
+                    </li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+                    <li><a href="./favourites.html">Favourites 🛒</a></li>
+                </ol>
+            </div>    
+        </nav>
+    </header>
+    <main>
+        <h1>Order Details</h1>
+    <form id="order-form">
+        <h2>Personal Details</h2>
+        <label>
+            Name:
+            <input type="text" id="name" required>
+        </label><br>
+        <label>
+            Email:
+            <input type="email" id="email" required>
+        </label><br>
+
+        <h2>Delivery Details</h2>
+        <label>
+            Address:
+            <input type="text" id="address" required>
+        </label><br>
+        <label>
+            Delivery Date:
+            <input type="date" id="delivery-date" required>
+        </label><br>
+
+        <h2>Payment Information</h2>
+        <label>
+            Card Number:
+            <input type="text" id="card-number" required>
+        </label><br>
+        <label>
+            Expiry Date:
+            <input type="text" id="expiry-date" required>
+        </label><br>
+
+        <button type="submit">Pay</button>
+    </form>
+    </main>   
+    <footer>
+        <section class="menu-footer">
+            <ol>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+            </ol>
+        </section>
+        <section class="social-media">
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" width="30"></a>       
+            <a href="#"><img src="./images/twitter.png" alt="Twitter" width="30"></a>        <!--https://www.flaticon.com/search?word=social%20media-->
+            <a href="#"><img src="./images/instagram.png" alt="Instagram" width="30"></a>
+            <a href="#"><img src="./images/youtube.png" alt="YouTube" width="30"></a>
+        </section>
+        <section class="contact-info">
+            <p>Contact Us: <a href="mailto:info@gamevault.com">info@gamevault.com</a></p>   
+        </section>
+        <small>&copy;GameVault. All Right Reserved.</small>
+    </footer>
+    <script>     /*Hamburger Menu JavaScript Function*/
+        function toggleMenu() { 
+            const menu = document.querySelector('.menu');   
+            menu.classList.toggle('active');
+        }
+    </script>
+    <script src="./main.js" defer></script>    
+</body>
+</html>

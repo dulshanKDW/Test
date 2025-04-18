@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="icon" type="image/png" href="/GameVault/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/GameVault/favicon.svg">
+    <link rel="shortcut icon" href="/GameVault/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/GameVault/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="GameVault">
+    <link rel="manifest" href="/GameVault/site.webmanifest">
+    <link rel="stylesheet" href="./css/aboutus.css">
+    <link rel="stylesheet" href="./css/headerfooter.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>        
+        <section ><img src="./images/logo.png" id="logo" alt="Logo"></section>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+        </div>
+            <div class="navbar">
+                <ol>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbutton">Products</a>
+                        <div class="dropdown-content">
+                            <a href="./consoles.html">Consoles</a>
+                            <a href="./peripherals.html">Peripherals</a>
+                        </div>
+                    </li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+                </ol>
+            </div>    
+        </nav>
+    </header>
+    <main>
+        <h1>About Us</h1>
+        <p>Welcome to GameVault! We are dedicated to bringing you the best gaming experience with top-notch consoles, peripherals, and games. Learn more about our branches below!</p>
+
+        <section class="branch">
+            <h2>GameVault Colombo</h2>
+            <div class="branch-content">
+                <img src="./images/store1.webp" alt="Colombo Branch">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.1914143878812!2d79.8612288970114!3d6.918595306245593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596d3cb8fe07%3A0x2b0ae2edd563a661!2sAsia%20Pacific%20Institute%20of%20Information%20Technology%20(APIIT)!5e0!3m2!1sen!2ssg!4v1736921079273!5m2!1sen!2ssg" 
+                loading="lazy">
+                </iframe>
+            </div>    
+            <div class="branch-info">
+                <p>Located in the heart of the city, GameVault Colombo is your go-to destination for the latest consoles and exclusive game releases. Our staff is always ready to assist you with your gaming needs. Also join with our gaming community to make new friends and enjoy fun and exiting events.</p>
+                <p><strong>Opening Hours:</strong></p> 
+                <p>Weekdays - 9:00 AM - 8:00 PM | Weekend - 9:00 AM - 5.30PM</p>
+            </div>
+        </section>
+
+        <section class="branch">
+            <h2>GameVault Kandy</h2>
+            <div class="branch-content">
+                <img src="./images/store3.png" alt="Kandy Branch">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1464.7104402506584!2d80.62052542261272!3d7.280914159228676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3673f5e22ab3b%3A0xcbaef11262bec73!2sAPIIT%20Kandy%20Campus!5e0!3m2!1sen!2ssg!4v1736920197010!5m2!1sen!2ssg" 
+                loading="lazy">
+                </iframe>
+            </div>    
+            <div class="branch-info">
+                <p>Nestled in the suburbs, Gamer's Paradise offers a quieter shopping experience with the same great products. A must-visit for gamers in the area!</p>
+                <p><strong>Opening Hours:</strong></p>
+                <p>Weekdays - 9:00 AM - 8:00 PM | Weekend - 9:00 AM - 5:30 PM</p>
+            </div>
+        </section>
+
+        <h2>Branch Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Branch Name</th>
+                    <th>Location</th>
+                    <th>Opening Hours</th>
+                    <th>Services</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GameVault Colombo</td>
+                    <td>No. 388 Union Pl, Colombo 00200, Sri Lanka</td>
+                    <td>
+                        Weekdays - 9:00 AM - 8:00 PM
+                        Weekend - 9:00 AM - 5.30PM
+                    </td>
+                    <td>Game Store, Game Center, Repair Services</td>
+                </tr>
+                <tr>
+                    <td>GameVault Kandy</td>
+                    <td>542 Peradeniya Rd, Kandy 20000, Sri Lanka</td>
+                    <td>
+                        Weekdays - 9:00 AM - 8:00 PM
+                        Weekend - 9:00 AM - 5:30 PM
+                    </td>
+                    <td>Game Store, Repair Services</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Visit us today for the ultimate gaming experience!</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <section class="menu-footer">
+            <ol>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+            </ol>
+        </section>
+        <section class="social-media">
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" width="30"></a>
+            <a href="#"><img src="./images/twitter.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="./images/instagram.png" alt="Instagram" width="30"></a>
+            <a href="#"><img src="./images/youtube.png" alt="YouTube" width="30"></a>
+        </section>
+        <section class="contact-info">
+            <p>Contact Us: <a href="mailto:info@gamevault.com">info@gamevault.com</a></p>   
+        </section>
+        <small>&copy;GameVault. All Right Reserved.</small>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>    
+</body>
+</html>

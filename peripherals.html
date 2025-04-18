@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="icon" type="image/png" href="/GameVault/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/GameVault/favicon.svg">
+    <link rel="shortcut icon" href="/GameVault/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/GameVault/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="GameVault">
+    <link rel="manifest" href="/GameVault/site.webmanifest">
+    <link rel="stylesheet" href="./css/peripherals.css">
+    <link rel="stylesheet" href="./css/headerfooter.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>        
+        <section ><img src="./images/logo.png" id="logo" alt="Logo"></section>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu">
+            <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+            </div>
+            <div class="navbar">
+                <ol>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./upcominggames.html">Upcoming Games</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbutton">Products</a>
+                        <div class="dropdown-content">
+                            <a href="./consoles.html">Consoles</a>
+                            <a href="./peripherals.html">Peripherals</a>
+                        </div>
+                    </li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+                </ol>
+            </div>    
+        </nav>
+    </header>
+    <main class="product-grid">
+        <h1>Peripherals</h1>
+        <div class="grid-container">
+            <div class="product-item">
+                <h2>DualSense Wireless Controller</h2>
+                <div class="image-container">
+                    <img src="./images/sonycontroller.png" alt="DualSense Controller" loading="lazy">
+                    <div class="price-overlay">$69.99</div>
+                </div>
+                <p>PlayStation 5 DualSense Wireless Controller - Multicolor</p>
+            </div>
+    
+            <div class="product-item">
+                <h2>Razer Huntsmen V2</h2>
+                <div class="image-container">
+                    <img src="./images/razerkeyboard.jpg" alt="Razer Huntsmen V2" loading="lazy">
+                    <div class="price-overlay">$59.99</div>
+                </div>
+                <p>Razer Huntsmen V2 Gaming Keyboard</p>
+            </div>
+    
+            <div class="product-item">
+                <h2>Razer Basilisk V3</h2>
+                <div class="image-container">
+                    <img src="./images/razermouse.jpg" alt="Razer Basilisk V3" loading="lazy">
+                    <div class="price-overlay">$69.99</div>
+                </div>
+                <p>Razer Basilisk V3 Customizable Gaming Mouse</p>
+            </div>
+
+            <div class="product-item">
+                <h2>Razer BlackShark V2 Pro</h2>
+                <div class="image-container">
+                    <img src="./images/razerblackshark.webp" alt="Razer BlackShark V2 Pro Headset" loading="lazy">
+                    <div class="price-overlay">$233.00</div>
+                </div>
+                <p>Razer BlackShark V2 Pro Wireless Gaming Headset</p>
+            </div>
+
+            <div class="product-item">
+                <h2>NETGEAR Nighthawk XR1000</h2>
+                <div class="image-container">
+                    <img src="./images/netgearwifi.webp" alt="NETGEAR Nighthawk Gaming WIFI Router" loading="lazy">
+                    <div class="price-overlay">$436.52</div>
+                </div>
+                <p>NETGEAR Nighthawk XR1000 Gaming WiFi 6 Router Wireless Speed up to 5.4Gbps</p>
+            </div>
+
+            <div class="product-item">
+                <h2>Secretlab Titan Evo 2025</h2>
+                <div class="image-container">
+                    <img src="./images/gamingchair.webp" alt="Secretlab Titan Evo Gaming Chair" loading="lazy">
+                    <div class="price-overlay">$2563,93</div>
+                </div>
+                <p>Secretlab Titan Evo 2025 Edition Gaming Chair</p>
+            </div>
+        </div>  
+    </main>
+    <footer>
+        <section class="menu-footer">
+            <ol>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./q&faq.html">Queries and FAQ</a></li> 
+            </ol>
+        </section>
+        <section class="social-media">
+            <a href="#"><img src="./images/facebook.png" alt="Facebook" width="30"></a>
+            <a href="#"><img src="./images/twitter.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="./images/instagram.png" alt="Instagram" width="30"></a>
+            <a href="#"><img src="./images/youtube.png" alt="YouTube" width="30"></a>
+        </section>
+        <section class="contact-info">
+            <p>Contact Us: <a href="mailto:info@gamevault.com">info@gamevault.com</a></p>   
+        </section>
+        <small>&copy;GameVault. All Right Reserved.</small>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>    
+</body>
+</html>
